@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    />
+    <link rel="stylesheet" href="../css/player.css" />
+  
+    <title>Music Player</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="music-player">
+        <div class="track-details">
+          <img src="" alt="track cover" class="track-details__tag track-details__tag--track-cover"></img>
+          <div class="track-details__tag track-details__tag--track-name"></div>
+          <div class="track-details__tag track-details__tag--artist-name"></div>
+        </div>
+        <div class="sliders">
+          <div class="sliders__slider-container sliders__slider-container--duration">
+            <span class="current-time"></span>
+            <input
+              type="range"
+              min="0"
+              max="100"
+              value="0"
+              class="slider slider--duration"
+            />
+            <span class="total-duration"></span>
+          </div>
+          <div class="sliders__slider-container sliders__slider-container--volume">
+            <i class="fa-solid fa-volume-low"></i>
+            <input
+              type="range"
+              min="1"
+              max="100"
+              value="50"
+              class="slider slider--volume"
+            />
+            <i class="fa-solid fa-volume-high"></i>
+          </div>
+        </div>
+        <div class="buttons">
+          <div class="buttons__button buttons__button--random-track">
+            <i class="fa-solid fa-shuffle"></i>
+          </div>
+          <div class="buttons__button buttons__button--prev-track">
+            <i class="fa-solid fa-backward-step"></i>
+          </div>
+          <div class="buttons__button buttons__button--play-pause">
+            <i class="fa-solid fa-play"></i>
+          </div>
+          <div class="buttons__button buttons__button--next-track">
+            <i class="fa-solid fa-forward-step"></i>
+          </div>
+          <div class="buttons__button buttons__button--repeat-track">
+            <i class="fa-solid fa-repeat"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+  </body>
+  <script src="../js/player.js" defer></script>
+</html>
